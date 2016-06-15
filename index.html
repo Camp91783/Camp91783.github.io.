@@ -12,9 +12,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="BootstrapBay.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/49e740aff4.js"></script>
   </head>
 <style type="text/css">
   
@@ -43,24 +42,24 @@ header
     height: 100%;
     display: table-row;
 }
-.col-md-5.no-float, .col-md-7.no-float {
+.col-md-3.no-float, .col-md-9.no-float {
     float: none; 
 }
-.col-md-5
-{   
+.col-md-3
+{ 
+		max-width: 100%;  
     display: table-cell;
     background: #FFFFFF;
-    width: 25%;
 }
-.col-md-7
+.col-md-9
 {
+		max-width: 100%;
     display: table-cell;
     background: #303030 ;
-    width: 75%;
     
 }
 
-.col-md-7.no-float
+.col-md-9.no-float
 {
   color: white;
 }
@@ -74,24 +73,75 @@ header  {
 }
 
 .img-circle {
-    border-radius: 6%;
+    border-radius: 3%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: 7px 7px 5px #787878;
+    box-shadow: 4px 4px 4px #787878;
 
 
 }
 
 img {
-    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-    filter: grayscale(100%);
+    max-width: 100%;
+    height: auto;
+    background-blend-mode: multiply;
+
 }
 
-
+h4  {
+  color:whitesmoke;
+}
 
 h3 {
-    text-decoration: underline;
+}
+
+h2{
+	
+	text-decoration-color: red;
+	text-decoration: underline;
+
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+ul {
+	overflow: auto;
+}
+
+ul li {
+	list-style-type: none;
+	float: left;
+}
+
+ul li a i {
+	background: #205D7A;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	font-size: 25px;
+	text-align: center;
+	margin-right: 10px;
+	padding-top: 15%;
+}
+
+.fa-linkedin {
+}
+
+i {
+
+  font-size: 10em;
+
 }
  
+.fa-big {
+
+    font-size: 100px !important;
+
+ }
+
 
  
 </style>
@@ -101,58 +151,109 @@ h3 {
 
 <div class="container">
     <div class="row">
-        <div class="col-md-5 no-float"> 
-          <h3> Tic Tac Toe </h3>
-            <p><font face="Futura">  I created this Tic Tac Toe game using JavaScipt for functionality puposes and css for styling, and it was uploaded via Github pages.  It keeps track of whose turn it is and once a winner is decided alerts the players.  Currently it is built for 2 players and am currently in the process of adding in a AI option.
-            </p>
-              <p><a href="http://camp91783.github.io/w07-d03-tic-tac-toe/"> Tic Tac Toe </a></p>
+        <div class="col-md-3 no-float"> 
+        	<h2><strong><center><font face="Copperplate"> Recent Projects </font></center></strong></h2>
+        	<br>
 
+          <h3><center> Tic Tac Toe <center></h3>
+            <p><font face="Futura">  I created this Tic Tac Toe game using JavaScipt for functionality puposes and css for styling. It was uploaded using Github pages.  It keeps track of whose turn it is and once a winner is decided, alerts the players of the winner.  Currently it is built for 2 players and I am currently in the process of adding in a AI option.
+            </p>
+            	<br>
+            	<br>
+            <img class="img" src="http://i.imgur.com/RoTPZgm.png"><img>
+            	<br>
+            	<br>
+            <img class="img"  src="http://i.imgur.com/EsgdaZX.png"></img>
+            	<br>
+            	<br>
+            <img class="img"  src="http://i.imgur.com/EsgdaZX.png"></img>
+              <br>
+              <br>
+              <p><center><a href="http://camp91783.github.io/w07-d03-tic-tac-toe/"> Tic Tac Toe </center></a></p>
+              <br>
+              <br>
+            <p><center><a href="https://github.com/Camp91783/w07-d03-tic-tac-toe"> Source Code for Tic Tac Toe </center></a></p>
           <br>
           <br>
-          <h3><font face="Futura"> Job Search Managment System </h3>
+          <h3><center><font face="Futura"> Job Search Managment System <center></h3>
             <p>  This project was created using Rails and I used Bootstrap for the styling aspects, and uploaded using Heroku.  As we were finishing up our classes at Star City Code School and began the job search I was trying to come up with an idea for another project that would incorporate both rails and bootstrap.  I figured why not make a web app that would be mobile based that I could use to keep track of all the jobs I was applying for?  I made this with the purpose of being able to access the app from my iphone when I was not around my computer or wifi to quickly be able to see jobs I have applied for, add a new job posting to database, as well as upload cover letters that were specific for each job and have easy access to them.  I had an option to create new users, although currently all users can see all jobs regardless of user.  I also set it up so you needed to be a registered user to use the site and I made this authentication by using sorcery.  Overall it is a basic web app that has been very useful for both keeping track of places I have applied but also to quickly add potential new opportunities I come accross when I am on the go.</p></font></p>
           <br>
-            <p><a href="https://sheltered-plains-86599.herokuapp.com">Job Search Managment</a></p>
           <br>
-          <h3><font face="Futura"> Soccer League Managment Sysytem </h3>
+         	<img class="img" src="http://i.imgur.com/rULwdWx.png"></img>
+         	<br>
+         	<br>
+         	<br>
+         	<img class="img" src="http://i.imgur.com/JrsFVx8.png"></img>
+         	<br>
+         	<br>
+         	<img class="img" src="http://i.imgur.com/mjhuhuZ.png"></img>
+         	<br>
+         	<br>
+         	<br>
+
+            <p><center><a href="https://sheltered-plains-86599.herokuapp.com">Job Search Managment</a></center></p>
+              <br>
+              <br>
+            <p><center><a href="https://github.com/Camp91783/employment">Source Code</a></center></p>
+          <br>
+          <h3><center><font face="Futura"> Soccer League Managment System </center></h3>
             <p>  This is the project for weeks 9-10 of the Star City Code School that a class mate and I created. The goal of this project was to create a web app that was a hypothetical soccer league managment system. You needed to be able to create players, create teams, and assign those players to specific teams. We also created a user logging in and out feature using Sorcery. Another feature that was added was a "Contact Us" feature that would allow someone to enter their name and email and an information request would be sent to sccssoccerproject@gmail.com as a way for a user to ask for more information about the league. We are in the process of adding in a feature that will alow a user to enter in their email and using the ActionMailer feature of rails it will generate an email that will go directly to the users entered email. Styling was done on a limited basis as this project focused more on using rails generators, Sorcery, and ActionMailer.  Another skill that was important from this project was this was our first one using collaboration since in the professional world that will be the majority of our work.
 
             When registering any email will work but will not be confirmed for valid address and no confirmation will be sent. We created it simply for a functional purpose. You can then use that email and password to log in on the login screen. This will not create a new "player", that still needs to be done on the create players page.
             </p></font></div>
 
-
-        <div class="col-md-7 no-float"><center>
-          <H1><font face="Futura"> Peter Camp </H1></font>
-          <br>
-          <h5><font face="Futura"> Contact: </h5>
-          <h5><font face="Futura"> email: Pete.F.Camp@gmail.com </h5>
-          <h5><font face="Futura"> phone:  402 - 212 - 3194 </h5>
+      <div class="row-fluid">
+        <div class="col-md-9 no-float"><center>
+          <h1><font face="Copperplate"> Peter Camp </h1>
           <br>
           <br>
           <p>
-          <img class="img-circle" src="http://www.fillmurray.com/g/400/500"></img>
+          <img class="img-circle" src="http://www.fillmurray.com/g/550/550"></img>
           <br>
           </p>
           <br>
           <br>
+          <a href="https://www.linkedin.com/in/peter-camp-786527119?trk=nav_responsive_tab_profile"><i class="fa fa-linkedin" style="font-size:48px;color:white" aria-hidden="true"></a></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/Camp91783?tab=repositories"><i class="fa fa-github-square" style="font-size:48px;color:white" aria-hidden="true"></a></i>
+          <br> 
           <br>
-            <h3> Junior Web Devloper </h3>
+          <br>
+          <br>
+          <br>
+          <br>
+          
+          <br>
+          <br>
+          <br>
+           <br>
+          <br>
+          <br>
+          <h3> Contact Information: </h3>
+          <h4> email: Pete.F.Camp@gmail.com </h4>
+          <h4> email: pete@petecamp.com </h4>
+          <h4> www.petecamp.com </h4>
+          	<br>
+            <br>
+          </ul>
+          <br>
+          <br>
+          <br>
           <br>
           <br>
           <br>
             <h2><font face="Copperplate"> About Me </font></h2>
             <br>
-              <p> My name is Peter Camp and I'm from Omaha Nebraska.  In my free time I enjoy being outdoors, golfing, playing basketball, reading, and especially hanging out with my 7 1/2 year old daughter Sophie.  In the summer of 2015 I decided after 10+ years in the customer service and food service industry I was ready for a change.  I began looking at various opportunities and kept coming back to web developement.  I have always been interested in computers and actually studied MIS while in college at Saint Louis University but needed way more training.  I found out that the <a href="http://omahacodeschool.com">Omaha Code School</a> was starting up the  <a href="http://www.starcitycodeschool.com">Star City Code School</a> in Lincoln, Nebraska.  After applying and being accepted I quit both my jobs and devoted all of my time to an intensive 16 week web developmet program.  After a very difficult 16 weeks, commuting from Omaha about 100 miles round trip per day, I completeed the program on June 3rd, 2016. Here is some about what I have learned as well as some of the projects I have been working on this spring.
+              <p> My name is Peter Camp and I'm from Omaha Nebraska.  In my free time I enjoy being outdoors, golfing, playing basketball, reading, and especially hanging out with my 7 1/2 year old daughter Sophie.  In the summer of 2015 I decided after 10+ years in the customer service and food service industry I was ready for a change.  I began looking at various opportunities and kept coming back to web developement.  I have always been interested in computers and actually studied MIS while in college at Saint Louis University but needed way more training.  I found out that the <a href="http://omahacodeschool.com">Omaha Code School</a> was starting up the  <a href="http://www.starcitycodeschool.com">Star City Code School</a> in Lincoln, Nebraska.  After interviewing, applying, and being accepted I quit both my jobs and devoted all of my time to an intensive 16 week web developmet program.  After a very difficult 16 weeks, commuting from Omaha about 100 miles round trip per day, I completeed the program on June 3rd, 2016. Here is some about what I have learned as well as some of the projects I have been working on this spring.
               </p>
             <br>
             <br>
             <br>
-            <h3> Skills / Experience </h3>
+            <h2><font face="Copperplate"> Skills / Experience </font></h2>
               <br>
               <br>
               <br>
               </center>
-              <p>  Star City Code school taught us in depth on a few laguages but also gave us the framework to be able to learn new ones not covered in our course in an efficient manner.  The various laguages and tools we studied and used in projects:</p>
+              <p>  Star City Code School was an intensive full stack web development program designed to give students the foundations to begin a career as a junior developer.  For more information on the program <a href="http://www.starcitycodeschool.com/program.html">click here</a>.   Some of the skills aquired through classroom lectures and in-depth group and individual projects are:</p>
               <br>
               <ul>               
                 <li>Ruby</li>
@@ -187,16 +288,111 @@ h3 {
                 <br>
                 <br>
                 <br>
-                 <h3><font face="Futura"> Currently In Development </h3>
-                 <h4><font face="Futura"> Beverage Inventory Managment System </h4>
-				            <p> In this project I will be using my past knowledge of the service industry to solve one of the biggest headaches I had while managing bars, taking inventory.  Inventory had to be done once a week and involved multiple people with multiple clipboards and multiple inventory lists, then one person had to compile all of them at the end.  My goal is create a web based app that will have all products preloaded into the schema, will have a way to cleanly give a correct count and move to the next item, as well as to simply add in new products for when some new product is brought on.  Ideally I would also like a way to email the result when the inventory is done.  
-				            </p></font></div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                  <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                 <br>
+                 
+                 <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+              
+               
+                <br>
+              </div>
 
 
 
 
               </ul>
-
+              </div>
         </p></font></div>
     </div>
 </div>
